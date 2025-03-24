@@ -1,0 +1,889 @@
+/* Estilos gerais ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 10px 10%; */
+}
+
+.flex {
+  display: flex;
+
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  color: #0a0a0a;
+  font-weight: 600;
+  background-color: rgb(224, 228, 13);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 40px 8%;
+  transition: .2s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px #f9f501;
+  transform: escale(1.15);
+}
+
+
+h2.titulo {
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  margin: 10px 1%;
+
+}
+
+h2.titulo span {
+  color: rgb(224, 228, 13);
+}
+
+
+/* Estilos do cabeçalho -------*/
+
+header {
+  width: 100%;
+  padding: 40px 4%;
+
+}
+
+.Logo {
+  width: 140px;
+}
+
+header>.interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav.menu-desktop nav ul {
+  list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header nav.menu-desktop ul li a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  transition: 0.2s;
+}
+
+header nav.menu-desktop ul li a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+header nav.menu-desktop ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: rgb(224, 228, 13);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+header nav.menu-desktop ul li a:hover::after {
+  width: 100%;
+
+}
+
+
+/* Estilos do Menu Mobile -------*/
+
+.btn-menu-mobile {
+  color: rgb(224, 228, 13);
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  /* Esconder por padrão */
+}
+
+/* Menu mobile */
+.menu-mobile {
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.menu-mobile nav ul {
+  text-align: right;
+}
+
+.menu-mobile.abrir-menu {
+  width: 70%;
+}
+
+.menu-mobile .btn-fechar {
+  padding: 20px 5%;
+  text-align: right;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+  display: block;
+
+}
+
+.menu-mobile .btn-fechar i {
+  color: #f6fa02;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-mobile nav ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-mobile nav ul li a:hover {
+  background-color: rgb(224, 228, 13);
+  color: #000;
+}
+
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 1020px) {
+  .btn-menu-mobile {
+    display: block;
+    /* Mostrar o botão do menu em dispositivos móveis */
+  }
+}
+
+/* Overlay do menu */
+.overlay-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 88888;
+
+}
+
+/* Estilos do Topo do Site ---------------*/
+section.topo-site {
+  padding: 40px 4%;
+  font-size: 30px;
+}
+
+section.topo-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topo-do-site h1 {
+  font-size: 46px;
+  color: #fff;
+  padding: 40px 8%
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: rgb(224, 228, 13);
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 10px 8%;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 4s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 30px;
+  }
+}
+
+
+/* Estilos das Especialidades -----------*/
+section.especializações {
+  padding: 40px 4%;
+}
+
+section.especializações .flex {
+  gap: 60px;
+}
+
+.especializações .especialidades-box {
+  display: flex;
+  color: #070707;
+  padding: 40px;
+  border-radius: 20px;
+  /* border: 2px solid #fff; */
+  margin-top: 45px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.especializações .especialidade-item i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgb(224, 228, 13);
+  ;
+  /* Cor dos ícones */
+}
+
+.especializações .especialidade-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.especializações .especialidade-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 8px #fff;
+}
+
+.especializações .especialidade-item h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.especializações .especialidade-item p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.custom-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+
+/* Estilos do Sobre ----------*/
+section.sobre-mim {
+  padding: 40px 8%;
+}
+
+.sobre-mim .flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+
+}
+
+.sobre-mim .sobre-mim-txt {
+  color: #fff;
+  flex-basis: auto;
+}
+
+.sobre-mim .sobre-mim-txt h2 {
+  flex-basis: auto;
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+
+.sobre-mim .sobre-mim-txt h2 span {
+  color: rgb(224, 228, 13);
+  display: block;
+}
+
+.sobre-mim .sobre-mim-txt p {
+  flex-basis: auto;
+  margin: -5px 0%;
+  text-align: justify;
+  padding: 10px;
+}
+
+.sobre-mim .sobre-mim-imagem {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.sobre-mim .sobre-mim-imagem img {
+  max-width: auto;
+  height: auto;
+  line-height: 150px;
+  margin: 70px 1%;
+  gap: 40px 0;
+}
+
+.sobre-mim .sobre-mim-txt .btn-Social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(224, 228, 13);
+  font-size: 22px;
+  cursor: pointer;
+  transition: .3s;
+  margin: 0 10px;
+  line-height: 45px;
+}
+
+/* Estilos do Portfolio --------------*/
+
+
+section.portfolio {
+  margin: 0 auto;
+  padding: 0 !important;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.portfolio .carrossel-container {
+  padding: 500px 0px 10%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.portfolio .carrossel-item {
+  display: none;
+  /* Oculta todas as imagens inicialmente */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio .carrossel-item.ativo {
+  display: flex;
+  /* Exibe apenas a imagem ativa */
+  opacity: 1;
+}
+
+.portfolio .carrossel-item img {
+  width: 100%;
+  /* Ajuste a largura da imagem conforme necessário */
+  max-width: 1100px;
+  /* Define um tamanho máximo para a imagem */
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  margin-right: 0px;
+  float: left;
+  flex-basis: auto;
+  padding: auto;
+
+
+}
+
+.portfolio .carrossel-item img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.portfolio .carrossel-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #000000, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 8%;
+  text-align: center;
+}
+
+.portfolio .carrossel-item .texto-slider {
+  position: absolute;
+  top: 60%;
+  /* Ajuste a posição vertical do texto */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  width: 90%;
+  max-width: 800px;
+  transition: 0.5s;
+}
+
+.portfolio .carrossel-item .texto-slider h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+}
+
+@keyframes anima-portfolio {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.portfolio .carrossel-item.ativo h2,
+.portfolio .carrossel-item.ativo p {
+  transform: translate(60px);
+  opacity: 0;
+  animation: anima-portfolio 0.5s ease-in-out .7s forwards;
+}
+
+.portfolio .carrossel-item.ativo h2 {
+  animation-delay: 1s;
+}
+
+.carrossel-container .carrossel-item.ativo {
+  opacity: 1;
+  z-index: 111111;
+}
+
+/* Estilos das Setas do Carrossel */
+.setas {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 4%;
+  z-index: 222222;
+}
+
+.setas button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  background-color: rgb(#747474);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.setas button:hover {
+  background-color: #fff;
+}
+
+/* Estilos do botão de navegação */
+
+.btn-nav-box {
+  padding: -800px 4%;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  /* Ajuste a distância do fundo */
+  left: 0;
+  z-index: 777777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.btn-nav-box .btn-nav {
+  width: 40px;
+  height: 10px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: .2s;
+  margin-bottom: 40% 4px;
+}
+
+.btn-nav-box .btn-nav.ativo {
+  background-color: #fff;
+  /* Estilo para o botão ativo */
+}
+
+.btn-nav-box .btn-nav:hover {
+  background-color: #fff;
+}
+
+
+/* Estilos do Contato --------------*/
+
+section.contatos {
+  padding: 80px 4%;
+}
+
+.contatos-box {
+  flex-basis: 35%;
+  margin: 20px 4%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contatos {
+  margin: 80px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contatos h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  /* Tamanho do título */
+  gap: 80px;
+}
+
+.contatos ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Espaço entre os itens */
+  flex-wrap: wrap;
+  /* Para garantir que fique responsivo */
+}
+
+.contatos ul li {
+  display: flex;
+  align-items: center;
+}
+
+.contatos ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  /* Texto branco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  /* Padding maior para botões mais destacados */
+  border-radius: 20px;
+  /* Bordas arredondadas */
+  transition: all 0.5s ease;
+  width: 250px;
+  /* Largura fixa para os botões */
+  background-color: #111111;
+  /* Fundo escuro para os botões */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+}
+
+.contatos ul li a:hover {
+  background-color: #f6fa02;
+  /* Cor de destaque no hover */
+  color: #080808;
+  /* Texto preto no hover */
+  transform: translateY(-10px);
+  /* Efeito de levantar */
+  box-shadow: 0 0 8px #fff;
+  /* Sombra branca no hover */
+}
+
+.contatos ul li a i {
+  font-size: 50px;
+  /* Tamanho maior para os ícones */
+  margin-bottom: 20px;
+  /* Espaçamento abaixo do ícone */
+  color: #f6fa02;
+  /* Cor dos ícones */
+}
+
+.contatos ul li a:hover i {
+  color: #080808;
+  /* Cor do ícone no hover */
+}
+
+.contatos ul li a span {
+  font-size: 24px;
+  /* Tamanho maior para o texto */
+  text-align: center;
+}
+
+
+/* Responsividade */
+@media only screen and (max-width: 600px) {
+  .contatos ul {
+    flex-direction: row;
+    /* Mantém os itens em linha mesmo em telas pequenas */
+    gap: 20px;
+    /* Reduz o espaço entre os itens */
+  }
+
+  .contatos ul li a {
+    padding: 20px;
+    /* Padding menor para telas menores */
+    width: 200px;
+    /* Largura menor para telas menores */
+  }
+
+  .contatos ul li a i {
+    font-size: 40px;
+    /* Tamanho menor para os ícones em telas menores */
+  }
+
+  .contatos ul li a span {
+    font-size: 20px;
+    /* Tamanho menor para o texto em telas menores */
+  }
+
+  .setas {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    padding: 0 10px;
+    /* Ajuste o padding conforme necessário */
+    z-index: 222222;
+  }
+
+  .setas button {
+    width: 30px;
+    /* Ajuste a largura do botão conforme necessário */
+    height: 30px;
+    /* Ajuste a altura do botão conforme necessário */
+    font-size: 1rem;
+    /* Ajuste o tamanho da fonte conforme necessário */
+  }
+}
+
+/* Estilos do Rodapé --------------*/
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 4%;
+  text-align: left;
+  box-shadow: 0 0 40px 10px #FFFFFF1d;
+}
+
+footer .flex {
+  justify-content: space-between;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1170px) {
+
+  /* Estilos gerais  */
+
+  section {
+    padding: 40px 4%;
+    /* Reduz o espaçamento em dispositivos móveis */
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  h2.titulo {
+    font-size: 34px;
+    line-height: 30px;
+    margin-bottom: 20px
+  }
+
+  .btn-contato button {
+    margin: 20px 8%;
+    /* Reduz o espaçamento ao redor do botão em dispositivos móveis */
+  }
+
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+  }
+
+
+  /* cabeçalho */
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+
+  /* topo do site */
+
+  section.topo-site .flex {
+    gap: 20px;
+  }
+
+  selection.topo-do-site {
+    padding: 10px 8%;
+  }
+
+  .topo-do-site h1 {
+    font-size: 30px;
+  }
+
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+  }
+
+  /* Estilos das Especialidades -----------*/
+  section.especializações {
+    padding: 40px 4%;
+  }
+
+  .especializações .especialidades-box {
+    display: flex;
+    max-width: 100%;
+    gap: 20px;
+    justify-content: center;
+  }
+
+
+  /* Estilos do Sobre ----------*/
+  section.sobre-mim {
+    padding: 60px 8%;
+  }
+
+  .sobre-mim .sobre-mim-txt h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .sobre-mim-imagem img {
+    width: 100%;
+  }
+
+  .btn-Social {
+    text-align: center;
+
+  }
+
+  /* Estilos do Portfólio -----------*/
+
+  section.portfolio {
+    padding: 40px 8%;
+  }
+
+  .portfolio .carrossel-container {
+    gap: 10px;
+  }
+
+  .portfolio .carrossel-item img {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    height: auto;
+
+  }
+
+  .portfolio .carrossel-item img {
+    width: 100%;
+
+  }
+
+  .portfolio .setas {
+    width: 100%;
+    padding: 20px 1%;
+  }
+
+  .portfolio .carrossel-item .texto-slider h2 {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 10px 4%;
+  }
+
+  .portfolio .carrossel-item .texto-slider p {
+    padding: 0% 8%;
+    margin-top: 10px 4%;
+    display: none;
+    /* Tirei o texto do carrossel */
+  }
+
+  .btn-nav-box {
+    padding: -6% 8%;
+  }
+
+  .btn-nav-box .btn-nav {
+    width: 20px;
+    /* Ajuste a largura do botão conforme necessário */
+    height: 10px;
+    /* Ajuste a altura do botão conforme necessário */
+    border-radius: 8px;
+
+  }
+
+  /* ---- contatos -----------*/
+  .contatos-box {
+    padding: 60PX 4%;
+  }
+
+  .fale-comigo-section h2 {
+    font-size: 24px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0;
+    /* Remove margens padrão */
+  }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head><!--Inicio head-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio de Projetos</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Fim google fonts -->
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Fim Bootstrap -->
+
+  <link rel="stylesheet" href="Arquivos/style.css">
+
+  <script src="Arquivos/menu.js" defer></script>
+
+</head><!--Fim head-->
+
+<body><!--Inicio Projeto-->
+
+  <!-- <h1><i class="bi bi-bar-chart-fill"></i> Meu Portfólio de Projetos</h1> -->
+
+  <header>
+
+    <div class="interface">
+      <div class="logo">
+        <a href="#">
+          <img src="Imagens/aa.png" class="Logo">
+        </a>
+      </div> <!-- logo -->
+
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#sobre-mim">Sobre Mim</a></li>
+          <li><a href="#portfolio">Projetos</a></li>
+        </ul>
+      </nav><!-- menu-desktop -->
+
+      <div class="btn-contato">
+        <a href="#footer">
+          <button>Contato</button>
+        </a>
+      </div> <!-- btn-contato -->
+
+      <div class="btn-menu-mobile" id="btn-menu" onclick="abrirMenu()">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar" onclick="fecharMenu()">
+          <i class="bi bi-x-circle"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
+        </nav><!-- menu-desktop -->
+
+      </div> <!-- menu-mobile -->
+
+      <div class="overlay-menu" id="overlay-menu"></div>
+
+    </div> <!-- interface -->
+
+  </header>
+
+  <main>
+
+    <section id="inicio" class="topo-do-site">
+      <div class="interface">
+        <div class="flex">
+
+          <div class="txt-topo-site">
+            <h1>Seja bem-vindo ao meu portfólio<span>!</span></h1>
+
+            <p>
+              Atuo no desenvolvimento de dashboards interativos e intuitivos, com foco na aplicação de soluções
+              inovadoras que transformam dados em insights estratégicos, contribuindo para decisões mais assertivas e
+              eficientes.
+            </p>
+
+            <div section id="contatos" class="btn-contato">
+              <a href="https://wa.me/12988354313" target="_blank">
+                <button>Entre em Contato</button>
+              </a>
+            </div> <!-- btn-contato -->
+
+          </div> <!--txt-topo-site -->
+
+          <div class="img-topo-site">
+            <img src="Imagens/Pessoa_V4.png" alt="Pessoa_V3">
+          </div> <!-- img-topo-site -->
+
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- topo-do-site -->
+
+    <section id="especialidades" class="especializações">
+      <div class="interface">
+        <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+        <div class="flex">
+          <div class="especialidades-box">
+
+            <!-- Power BI -->
+            <div class="especialidade-item">
+              <i class="bi bi-bar-chart-fill"></i> <!-- Ícone do Power BI -->
+              <h3>Power BI</h3>
+              <p>
+                Desenvolvimento de Dashboards Interativos e Intuitivos para Negócios: Criação de dashboards
+                personalizados, relatórios gerenciais e análises de dados para tomada de decisões estratégicas.
+              </p>
+            </div>
+
+            <!-- Python -->
+            <div class="especialidade-item">
+              <i class="devicon-python-plain"></i> <!-- Ícone do Python -->
+              <h3>Python</h3>
+              <p>
+                Desenvolvimento de soluções de análise de dados, automação de processos e machine learning para
+                otimização de negócios.
+              </p>
+            </div>
+
+            <!-- SQL Server -->
+            <div class="especialidade-item">
+              <i class="bi bi-database-fill"></i> <!-- Ícone do SQL Server -->
+              <h3>SQL </h3>
+              <p>
+                Gerenciamento e otimização de bancos de dados, criação de queries complexas e desenvolvimento de
+                soluções de armazenamento de dados.
+              </p>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="especialidade-item">
+              <i class="devicon-javascript-plain"></i> <!-- Ícone do JavaScript -->
+              <h3>JavaScript</h3>
+              <p>
+                Desenvolvimento de aplicações web interativas e dinâmicas, utilizando frameworks modernos como
+                React e Node.js.
+              </p>
+            </div>
+
+            <!-- CSS -->
+            <div class="especialidade-item">
+              <i class="devicon-css3-plain"></i> <!-- Ícone do CSS -->
+              <h3>CSS</h3>
+              <p>
+                Criação de designs responsivos e modernos, com foco em experiência do usuário e boas práticas de
+                desenvolvimento front-end.
+              </p>
+            </div>
+
+            <!-- HTML -->
+            <div class="especialidade-item">
+              <i class="devicon-html5-plain"></i> <!-- Ícone do HTML -->
+              <h3>HTML</h3>
+              <p>
+                Desenvolvimento de estruturas semânticas e acessíveis para páginas web, seguindo as melhores práticas
+                de SEO e usabilidade.
+              </p>
+            </div>
+
+            <!-- Alteryx -->
+            <div class="especialidade-item">
+              <i class="bi bi-gear-fill"></i> <!-- Ícone genérico para Alteryx -->
+              <h3>Alteryx</h3>
+              <p>
+                Automação de fluxos de trabalho de dados, preparação e análise de dados avançada para insights
+                rápidos e precisos.
+              </p>
+            </div>
+
+            <!-- Google Cloud Platform (GCP) -->
+            <div class="especialidade-item">
+              <i class="devicon-googlecloud-plain"></i> <!-- Ícone do GCP -->
+              <h3>Google Cloud Platform</h3>
+              <p>
+                Desenvolvimento e gerenciamento de soluções em nuvem, incluindo armazenamento, análise de dados e
+                machine learning.
+              </p>
+            </div>
+
+          </div><!--especialidades-box-->
+        </div><!--flex-->
+      </div><!--interface-->
+    </section><!--especializações-->
+
+    <section id="sobre-mim" class="sobre-mim">
+      <div class="interface">
+        <!-- <h2 class="titulo_V2">SOBRE <span>MIM.</span></h2> -->
+        <div class="flex">
+          <div class="sobre-mim-imagem">
+            <img src="Imagens/Pessoa_V5.png" alt="Pessoa_V4">
+          </div> <!-- sobre-mim-imagem -->
+
+          <div class="sobre-mim-txt">
+            <h2>MUITO PRAZER,<br><span>SOU ADILSON SANTANA.</span></h2>
+            <br>
+            <p>
+              Analista de Dados com formação em Engenharia Civil e especializações em Gestão de Projetos de TI, Análise
+              e Desenvolvimento de Sistemas e Engenharia de Dados. Apaixonado por transformar dados em insights
+              estratégicos que impulsionam a inovação e a eficiência nas organizações. Possuo expertise em ferramentas
+              como Alteryx, Python, SQL, Modelagem de Dados e outras ferramentas da Power Platform,além de
+              conhecimentos avançados em governança de
+              dados, integração de plataformas como Google Cloud Platform (GCP) e SAP HANA, e criação de soluções
+              inteligentes e automatizadas.
+            </p>
+            <br>
+            <p>
+              Minha experiência abrange desde a coleta e processamento de dados até a entrega de soluções de alto
+              impacto para negócios, com foco em ETL, modelagem de dados, automação de processos (RPA) e criação de
+              dashboards interativos e relatórios gerenciais. Atuo liderando projetos que integram inteligência e
+              automação para otimizar processos e gerar insights valiosos, conectando dados, pessoas e tecnologia para
+              promover a transformação digital.
+            </p>
+            <br>
+            <p>
+              Com habilidades em storytelling de dados e uma comunicação assertiva, trabalho alinhando equipes técnicas
+              e de negócios para alcançar resultados consistentes e impactantes. Sou movido por desafios em ambientes
+              dinâmicos e estou sempre em busca de oportunidades para aplicar minhas habilidades analíticas e técnicas,
+              gerando impacto real e contínuo nas organizações.
+            </p>
+
+            <div class="btn-Social">
+              <a href="https://www.linkedin.com/in/adilson-santos-santana-99185289/" target="_blank"><button><i
+                    class="bi bi-linkedin"></i></button></a>
+              <a href="https://github.com/adilsonssdev" target="_blank"><button><i
+                    class="bi bi-github"></i></button></a>
+              <a href="Arquivos/CV_ADILSON DOS SANTOS SANTANA.pdf" download="Download CV.pdf" target="_blank"><button><i
+                    class="bi bi-file-earmark-arrow-down-fill"></i></button></a>
+            </div><!--btn-Social-->
+
+          </div> <!-- sobre-mim-txt -->
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section><!--sobre-mim-->
+
+    <section id="portfolio" class="portfolio">
+      <div class="interface">
+        <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+
+        <div class="carrossel-container">
+
+          <div class="carrossel-item ativo">
+            <img src="Imagens/Relatório_Atendimentos.png" alt="Projeto 1">
+            <div class="texto-slider">
+              <h2>Relatório de Atendimentos</h2>
+              <p>
+                Dashboard interativo de atendimentos, desenvolvimento de um painel dinâmico com análises de chamados,
+                SLA, status de tickets e indicadores de performance. O dashboard permite monitorar KPIs essenciais, como
+                métricas de atendimento ao cliente, proporcionando insights estratégicos para melhorar a qualidade e
+                eficiência do serviço.
+              </p>
+              <br>
+              <!-- <a href="#"></i><button>Visualizar</button></a> -->
+            </div>
+          </div>
+
+          <div class="carrossel-item">
+            <img src="Imagens/Relatório_Chamados.png" alt="Projeto 2">
+            <div class="texto-slider">
+              <h2>Relatório de Chamados</h2>
+              <p>
+                Dashboard interativo de chamados, com análises de chamados, SLA, status de tickets e indicadores de
+                performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="carrossel-item">
+            <img src="Imagens/Relatório_Comercial.png" alt="Projeto 3">
+            <div class="texto-slider">
+              <h2>Relatório Comercial</h2>
+              <p>
+                Um dashboard interativo comercial permite análises dinâmicas de Ticket Médio, SLA, NPS, Retenção de
+                Clientes e Taxa de Satisfação da Equipe de Vendas. A correlação entre indicadores facilita insights estratégicos, ajudando na identificação de padrões e
+                oportunidades de melhoria. 
+                <br>
+                Com análises preditivas e alertas automáticos, gestores podem agir rapidamente para otimizar desempenho
+                e evitar perdas. Acessível de qualquer dispositivo, o dashboard proporciona mobilidade e agilidade na gestão comercial.
+              </p>
+            </div>
+          </div>
+
+          <div class="carrossel-item">
+            <img src="Imagens/Relatório_Produção OEE.png" alt="Projeto 4">
+            <div class="texto-slider">
+              <h2>Relatório de Produção OEE</h2>
+              <p>
+                Dashboard interativo de produção OEE (Overall Equipment Effectiveness) é um
+                indicador que mede a eficiência de máquinas e processos de fabricação. Ele é usado para acompanhar e
+                melhorar os resultados dos equipamentos.
+              </p>
+              <br>
+              <!-- <a href="#"></i><button>Visualizar</button></a> -->
+            </div>
+          </div>
+
+          <div class="carrossel-item">
+            <img src="Imagens/Kpi_Produtos.png" alt="Projeto 5">
+            <div class="texto-slider">
+              <h2>Kpi de Produtos</h2>
+              <p>
+                Dashboard interativo de produtos, Os KPIs de gerenciamento de produtos são métricas que quantificam o
+                sucesso de um produto. Eles orientam todas as decisões estratégicas e garantem o alinhamento com as
+                metas do projeto.
+              </p>
+              <br>
+              <!-- <a href="#"></i><button>Visualizar</button></a> -->
+            </div>
+          </div>
+
+          <div class="carrossel-item">
+            <img src="Imagens/Relatório_Financeiro.png" alt="Projeto 6">
+            <div class="texto-slider">
+              <h2>Relatório Financeiro</h2>
+              <p>
+                Dashboard Interativo Financeiro, um painel dinâmico com análises financeiras abrangentes, incluindo:
+                Faturamento e Lucro, Impacto de Custos, Rentabilidade de Investimentos, Liquidez Financeira,
+                Eficiência Operacional ,Estrutura de Capital e Capacidade de Pagamento de Dívidas.
+                <br>
+                Os indicadores financeiros são métricas essenciais que fornecem insights sobre o desempenho econômico de
+                uma empresa, permitindo a avaliação de sua saúde financeira, identificação de tendências e suporte à
+                tomada de decisões estratégicas.
+              </p>
+              <br>
+              <!-- <a href="#"></i><button>Visualizar</button></a> -->
+            </div>
+          </div>
+
+          <!-- Setas -->
+          <div class="setas">
+            <button id="anterior"><i class="bi bi-caret-left-fill"></i></button>
+            <button id="proximo"><i class="bi bi-caret-right-fill"></i></button>
+            <!-- Fim Setas -->
+          </div>
+
+          <!-- Botão de Navegação -->
+          <div class="btn-nav-box">
+            <div class="btn-nav ativo"></div>
+            <div class="btn-nav"></div>
+            <div class="btn-nav"></div>
+            <div class="btn-nav"></div>
+            <div class="btn-nav"></div>
+            <div class="btn-nav"></div>
+          </div>
+
+        </div><!--carrossel-container-->
+      </div><!--interface-->
+    </section><!--portfolio-->
+
+    <section id="contatos" class="contatos">
+      <div class="interface">
+        <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+        <div class="flex"></div>
+        <div class="contatos-box">
+
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/adilson-santos-santana-99185289/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/12988354313" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:pradilsonsantana@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+                <span>E-mail</span>
+              </a>
+            </li>
+          </ul>
+        </div><!--contatos-box-->
+      </div><!--flex-->
+      </div><!--interface-->
+    </section><!--Contatos-->
+
+  </main>
+
+  <footer>
+    <div id="footer" class="interface">
+
+      <div class="line-footer">
+        <p> &copy; 2025 - Developed by Adilson Santana. </p>
+      </div>
+
+    </div><!--line-footer-->
+    </div><!--interface-->
+
+  </footer>
+
+
+  <script src="Arquivos/main.js"></script>
+
+</body><!--Fim Projeto-->
+
+</html>
