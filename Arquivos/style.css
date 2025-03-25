@@ -725,7 +725,7 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 60px 4%;
-  text-align: left;
+  text-align: center;
   box-shadow: 0 0 40px 10px #FFFFFF1d;
 }
 
@@ -733,6 +733,7 @@ footer .flex {
   justify-content: space-between;
   gap: 40px;
 }
+
 
 @media screen and (max-width: 1170px) {
 
@@ -886,4 +887,9 @@ footer .flex {
     margin: 0;
     /* Remove margens padrão */
   }
+
+  /* Estilos do Rodapé --------------*/
+  footer .line-footer {
+    padding: 40px 4%; /* Reduz o espaçamento em dispositivos móveis */
+    text-align: center;}
 }
